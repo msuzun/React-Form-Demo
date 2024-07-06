@@ -5,7 +5,7 @@ Bu proje, React ile basit bir form kullanımı örneğini içermektedir. Proje, 
 
 ## Proje Görüntüsü
 
-![Proje Görüntüsü](image.jpeg)
+![Proje Görüntüsü](image.jpg)
 
 ## Başlarken
 Bu talimatlar, projenin  makinenizde çalıştırılmasını sağlayacaktır.
