@@ -96,7 +96,7 @@ Katkılarınızı bekliyoruz! Lütfen önce bir konu açarak neyi değiştirmek 
 5. Bir Pull Request açın
 
 ## Lisans
-Bu içeriği kopyalayarak kendi metin düzenleyicinize yapıştırabilir ve `README.md` dosyası olarak kaydedebilirsiniz. &#8203;:citation[oaicite:0]{index=0}&#8203;
+Bu projeyi geliştirebilirsiniz.
 
 
 
