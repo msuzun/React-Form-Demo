@@ -33,6 +33,24 @@ Bu talimatlar, projenin  makinenizde çalıştırılmasını sağlayacaktır.
     ```bash
     yarn install
     ```
+4. json-server'ı global olarak yükleyin:
+   ```bash
+    npm install -g json-server
+    ```
+5. `db.json` dosyasını oluşturun.
+   ```bash
+      {
+          "tasks": [
+  
+          ]
+      }
+
+   ```
+6. json-server'ı başlatın:
+     ```bash
+        json-server --watch db.json --port 3001
+    ```
+     
 
 
 ### Çalıştırma
@@ -51,11 +69,15 @@ Tarayıcınızı açın ve [http://localhost:3000](http://localhost:3000) adresi
 
 - **React**: Kullanıcı arayüzünü oluşturmak için.
 - **CSS**: Basit stillendirme için.
+- **json-server**: Basit bir REST API oluşturmak için.
+- **Axios**: HTTP isteklerini yönetmek için.
 
 ## Proje Yapısı
 
 ```bash
 FormKullanimi/
+├── api/
+│   ├── db.json/
 ├── node_modules/
 ├── public/
 ├── src/
@@ -83,6 +105,7 @@ FormKullanimi/
 - **Görev Ekleme**: Kullanıcıların yeni görevler eklemesine olanak tanır.
 - **Görev Güncelleme**:  Kullanıcıların mevcut görevleri güncellemesine izin verir.
 - **Görev Silme**: Kullanıcıların görevleri silmesine olanak tanır.
+- **CRUD İşlemleri**: Axios ve json-server kullanarak görevler üzerinde CRUD (Create, Read, Update, Delete) işlemleri gerçekleştirir.
 - **Responsive Tasarım**: Mobil uyumlu kullanıcı arayüzü.
 
 ## Katkıda Bulunma
