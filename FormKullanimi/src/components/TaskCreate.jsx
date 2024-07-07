@@ -1,5 +1,7 @@
-import { useState } from "react";
-function TaskCreate({onCreate, task, taskFormUpdate,OnUpdate}) {
+import { useState,useContext } from "react";
+import TasksContext from "../context/task";
+function TaskCreate({ task, taskFormUpdate,OnUpdate}) {
+    const {editTaskById,createTask} = useContext(TasksContext)
     const [title, setTitle] = useState(task ? task.title : '')
     const [taskDesc, setTaskDesc] = useState(task ? task.taskDesc : '')
     const handleCTitlehange = (event) =>{
@@ -12,9 +14,11 @@ function TaskCreate({onCreate, task, taskFormUpdate,OnUpdate}) {
         event.preventDefault();
         if (taskFormUpdate) {
             OnUpdate(task.id,title,taskDesc)
+            editTaskById(task.id,title,taskDesc)
         }
         else{
-            onCreate(title,taskDesc);
+            //onCreate(title,taskDesc);
+            createTask(title,taskDesc)
         }  
         setTitle('');
         setTaskDesc('');
