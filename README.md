@@ -71,6 +71,7 @@ Tarayıcınızı açın ve [http://localhost:3000](http://localhost:3000) adresi
 - **CSS**: Basit stillendirme için.
 - **json-server**: Basit bir REST API oluşturmak için.
 - **Axios**: HTTP isteklerini yönetmek için.
+- **Context API**: Uygulama genelinde durumu yönetmek için.
 
 ## Proje Yapısı
 
@@ -82,6 +83,8 @@ FormKullanimi/
 ├── public/
 ├── src/
 │   ├── assets/
+│   ├── context/
+│   │   ├── task.jsx
 │   ├── components/
 │   │   ├── TaskCreate.jsx
 │   │   ├── TaskList.jsx
@@ -107,6 +110,11 @@ FormKullanimi/
 - **Görev Silme**: Kullanıcıların görevleri silmesine olanak tanır.
 - **CRUD İşlemleri**: Axios ve json-server kullanarak görevler üzerinde CRUD (Create, Read, Update, Delete) işlemleri gerçekleştirir.
 - **Responsive Tasarım**: Mobil uyumlu kullanıcı arayüzü.
+- **Context API**: Uygulama içindeki props kullanımlarını azaltmak için kullanıldı.
+
+## Güncellemeler
+
+- **07 Temmuz 2024** : Proje Context API kullanılarak güncellendi.
 
 ## Katkıda Bulunma
 
